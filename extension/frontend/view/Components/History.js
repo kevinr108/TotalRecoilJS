@@ -4,6 +4,7 @@ const History = ({ tree }) => {
   // display new history every time tree updates
   const [history, setHistory] = useState([]);
   const [count, setCount] = useState(0);
+
   useEffect(() => {
     let lastHistory;
     let stringTree = tree ? JSON.stringify(tree[1].atomVal) : null;
@@ -18,6 +19,7 @@ const History = ({ tree }) => {
     } else {
       setHistory([...history, { count, tree }]);
     }
+    console.log('history', history)
     setCount(count + 1);
   }, [tree])
 
