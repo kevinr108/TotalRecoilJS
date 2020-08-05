@@ -94,6 +94,7 @@ circle {
   right: 36%;
   padding: 2px;
   background: none;
+  background-color: #444857;
   font-family: inherit;
   font-size: 14px;
   border: 2px solid rgb(0, 0, 0);
@@ -109,18 +110,20 @@ circle {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
- 
+}
+
+.graph-button-1:focus {
+  outline:none;
 }
 
 button:hover {
   color: #F0DB4F;
  }
-   
-
 
 .graph-container {
   width: 65%;
   margin: 0;
+   border-right: 1px solid black;
 }
 
 
@@ -158,7 +161,6 @@ button:hover {
 .navbar {
   margin: 0;
   width: 35%;
-  border: 2px solid #333642;
 }
   
 .navbaritem {
@@ -194,7 +196,7 @@ button:hover {
 }
 
 .atom-container {
-  border: 2px black solid;
+  border: 2px #cecdcd solid;
   border-radius: 10px;
   padding: 10px;
   margin-top: 10px;
